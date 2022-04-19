@@ -74,6 +74,12 @@ body {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+
 .navbar-brand {
   display: flex;
   flex-direction: column;
@@ -83,6 +89,12 @@ body {
   text-decoration: none;
   font-weight: 500;
   margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    flex-direction: row;
+  }
 }
 
 .navbar-brand img {
@@ -119,6 +131,13 @@ body {
 .main-title {
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .store {
+    display: flex;
+    gap: 1em;
+  }
 }
 
 /* Card  */
@@ -167,8 +186,31 @@ body {
   order: 2;
 }
 
+
 .us-col-text {
   order: 1;
+}
+
+@media (min-width: 576px) {
+  .us-col-img {
+    height: 31.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  .us {
+    flex-direction: row;
+  }
+
+  .us-col-img {
+    order: 1;
+    flex: 1 1 0;
+  }
+
+  .us-col-text {
+    order: 2;
+    flex: 1 1 0;
+  }
 }
 
 .us-body {
